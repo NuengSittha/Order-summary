@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+
+    body {
+        background-color: hsl(225, 100%, 94%);
+        background-image: url('images/pattern-background-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        font-size: 16px;
+    }
+    .wrapper  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .content {
+      max-width: 450px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .image img {
+      vertical-align: middle;
+    }
+
+    .detail {
+      padding: 40px 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+    }
+
+    .detail h1 {
+      font-weight: 900;
+      text-align: center;
+      color: hsl(223, 47%, 23%);
+    }
+
+    .detail p {
+      margin: 1rem 0;
+      text-align: center;
+      color: hsl(224, 23%, 55%);
+    }
+
+    .detail .order {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.3rem;
+      border-radius: 15px;
+      width: 100%;
+      background: hsl(225, 100%, 98%);
+    }
+
+    .detail .order .order-detail {
+      flex: 1 1 auto;
+      padding: 0 20px;
+    }
+
+    .detail .order .order-detail h3 {
+      font-size: 16px;
+      line-height: 1;
+      font-weight: 900;
+      color: hsl(223, 47%, 23%);
+    }
+    .detail .order .order-detail h4 {
+      margin-top: .5rem;
+      font-size: 16px;
+      line-height: 1;
+      font-weight: 500;
+      color: hsl(224, 23%, 55%);
+    }
+
+    .edit-order a {
+      font-weight: 700;
+      color: hsl(245, 75%, 52%);
+    }
+
+    .edit-order a:hover {
+      text-decoration: none;
+      color: #897cee;
+    }
+
+    .button {
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    .button button {
+      border: 0;
+      color: #fff;
+      cursor: pointer;
+      padding: 1rem 0;
+      font-size: 16px;
+      line-height: 1;
+      font-weight: 700;
+      border-radius: 10px;
+      background: hsl(245, 75%, 52%);
+      box-shadow: 0px 5px 20px  #1a117875;
+      width: 100%;
+      transition: all 0.3s ease;
+    }
+
+    .button button:hover {
+      background: #766cf1;
+    }
+
+    .cancel-order {
+      margin-top: 2rem;
+    }
+
+    .cancel-order button {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      color: hsl(224, 23%, 55%);
+      border: none;
+      background: transparent;
+      transition: all 0.3s ease;
+    }
+
+    .cancel-order button:hover {
+      color: hsl(223, 47%, 23%);
+    }
+
+
+    .attribution {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 20px;
+       font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+       <div class="image">
+        <img src="images/illustration-hero.svg" alt="banner">
+       </div>
+       <div class="detail">
+          <h1>Order Summary</h1>
+          <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+            device anywhere you like!</p>
+          <div class="order">
+            <img src="images/icon-music.svg" alt="music">
+            <div class="order-detail">
+              <h3>Annual Plan</h3>
+              <h4>$59.99/year</h4>
+            </div>
+            <div class="edit-order">
+              <a href="#">Change</a>
+            </div>
+          </div>
+          <div class="button">
+            <button type="button">Proceed to Payment</button>
+          </div>
+          <div class="cancel-order">
+            <button type="button">Cancel Order</button>
+          </div>
+       </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://bio.link/nueng">Nueng Sittha</a>.
+  </div>
+</body>
+</html>
